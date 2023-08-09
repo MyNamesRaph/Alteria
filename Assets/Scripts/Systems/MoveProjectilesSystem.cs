@@ -2,7 +2,9 @@ using Unity.Entities;
 using Unity.Physics.Systems;
 using Unity.Burst;
 
-
+/// <summary>
+/// Système de déplacement des projectiles
+/// </summary>
 [BurstCompile]
 [UpdateBefore(typeof(PhysicsSystemGroup))]
 public partial struct MoveProjectilesSystem : ISystem
@@ -21,6 +23,11 @@ public partial struct MoveProjectilesSystem : ISystem
         }.Schedule();
     }
 
+    /// <summary>
+    /// Créer un EntityCommandBuffer à partir du state
+    /// </summary>
+    /// <param name="state"></param>
+    /// <returns></returns>
     [BurstCompile]
     private EntityCommandBuffer.ParallelWriter GetEntityCommandBuffer(ref SystemState state)
     {

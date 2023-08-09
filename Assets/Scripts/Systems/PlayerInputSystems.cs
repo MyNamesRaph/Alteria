@@ -15,7 +15,10 @@ using UnityEngine;
 [UpdateBefore(typeof(TransformSystemGroup))]
 public partial struct PlayerMovementSystem : ISystem
 {
-
+    /// <summary>
+    /// Mettre à jour la position du joueur à chaque frame
+    /// </summary>
+    /// <param name="state"></param>
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
@@ -79,7 +82,7 @@ public partial struct PlayerJumpSystem : ISystem
 public partial struct PlayerMouseInteractionSystem : ISystem
 {
     /// <summary>
-    /// Mets à jour l'entité sélectionnée de MouseClickEvent à chaque frame.
+    /// Mets à jour l'entité sélectionnée à chaque frame.
     /// </summary>
     /// <param name="state"></param>
     public void OnUpdate(ref SystemState state)
@@ -125,6 +128,7 @@ public partial struct MouseClickSystem : ISystem
 {
     /// <summary>
     /// Éxécute l'événement MouseClickEvent lorsque qu'il est actif et effectu l'action approprié
+    /// selon l'emplacement d'inventaire sélectionné
     /// </summary>
     /// <param name="state"></param>
     public void OnUpdate(ref SystemState state)

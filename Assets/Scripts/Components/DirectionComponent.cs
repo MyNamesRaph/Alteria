@@ -2,8 +2,7 @@ using Unity.Entities;
 using Unity.Mathematics;
 
 /// <summary>
-/// La position de la souris sur l'écran
-/// Une instance seule de ce composant doit exister
+/// Direction de déplacement de l'entité
 /// </summary>
 public struct DirectionComponent : IComponentData
 {

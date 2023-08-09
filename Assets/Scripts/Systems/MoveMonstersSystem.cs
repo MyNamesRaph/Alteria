@@ -5,7 +5,9 @@ using Unity.Mathematics;
 using Unity.Collections;
 using UnityEngine;
 
-
+/// <summary>
+/// Système de déplacement des monstres
+/// </summary>
 [BurstCompile]
 [UpdateBefore(typeof(TransformSystemGroup))]
 public partial struct MoveMonstersSystem : ISystem

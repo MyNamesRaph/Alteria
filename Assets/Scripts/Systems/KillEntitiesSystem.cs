@@ -4,6 +4,9 @@ using Unity.Burst;
 using Unity.Collections;
 
 
+/// <summary>
+/// Système pour tuer les monstres
+/// </summary>
 [BurstCompile]
 public partial struct KillEntitiesSystem : ISystem
 {

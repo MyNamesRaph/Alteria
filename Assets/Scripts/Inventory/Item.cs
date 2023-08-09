@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Item affiché dans l'inventaire
+/// Un item affiché dans l'inventaire
 /// </summary>
 public class Item : MonoBehaviour 
 {

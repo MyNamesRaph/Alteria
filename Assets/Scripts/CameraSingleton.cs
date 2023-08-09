@@ -2,7 +2,7 @@ using UnityEngine;
 using Unity.Mathematics;
 
 /// <summary>
-/// Singleton permettant d'accéder à la caméra à l'intérieur d'un système
+/// Singleton permettant d'accéder à la caméra depuis un système
 /// </summary>
 public class CameraSingleton : MonoBehaviour
 {

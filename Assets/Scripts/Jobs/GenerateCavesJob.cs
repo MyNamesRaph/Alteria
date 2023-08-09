@@ -8,7 +8,7 @@ using UnityEngine.Jobs;
 using UnityEngine;
 
 /// <summary>
-/// Désactive les blocks du monde fesant partie d'une grotte
+/// Désactive les blocks du monde faisant partie d'une grotte
 /// </summary>
 public partial struct GenerateCavesJob : IJobEntity
 {

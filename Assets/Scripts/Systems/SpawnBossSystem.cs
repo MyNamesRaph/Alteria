@@ -4,6 +4,9 @@ using Unity.Burst;
 using Unity.Mathematics;
 
 
+/// <summary>
+/// Système pour spawner le boss
+/// </summary>
 [BurstCompile]
 public partial struct SpawnBossSystem : ISystem
 {
@@ -11,7 +14,7 @@ public partial struct SpawnBossSystem : ISystem
 
 
     /// <summary>
-    /// Faire apparetre le boss lorsque tous les monstres sont tués
+    /// Faire apparaitre le boss lorsque tous les monstres sont tués
     /// </summary>
     /// <param name="state"></param>
     [BurstCompile]

@@ -5,7 +5,7 @@ using System;
 using TMPro;
 
 /// <summary>
-/// Singleton permettant de gérer l'inventaire
+/// Singleton permettant de gérer l'inventaire depuis un système
 /// </summary>
 public class Inventory : MonoBehaviour
 {

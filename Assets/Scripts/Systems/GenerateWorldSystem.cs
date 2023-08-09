@@ -5,7 +5,9 @@ using Unity.Mathematics;
 using Unity.Collections;
 using UnityEngine;
 
-
+/// <summary>
+/// Système de génération du monde
+/// </summary>
 [BurstCompile]
 public partial struct GenerateWorldSystem : ISystem
 {
@@ -71,6 +73,11 @@ public partial struct GenerateWorldSystem : ISystem
 
     }
 
+    /// <summary>
+    /// Créer un EntityCommandBuffer à partir du state
+    /// </summary>
+    /// <param name="state"></param>
+    /// <returns></returns>
     [BurstCompile]
     private EntityCommandBuffer.ParallelWriter GetEntityCommandBuffer(ref SystemState state)
     {
@@ -79,6 +86,12 @@ public partial struct GenerateWorldSystem : ISystem
         return ecb.AsParallelWriter();
     }
 
+    /// <summary>
+    /// Instantier tous les blocks nécéssaires à la construction du monde
+    /// </summary>
+    /// <param name="state"></param>
+    /// <param name="prefab">Préfab de block à instancier</param>
+    /// <param name="size">Grandeur du monde</param>
     [BurstCompile]
     private void InstantiateAllBlocks(
         ref SystemState state,

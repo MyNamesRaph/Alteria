@@ -4,7 +4,7 @@ using Unity.Burst;
 using Unity.Mathematics;
 
 /// <summary>
-/// Créateur d'entitités de block
+/// Créateur d'entitités de projectile
 /// </summary>
 [BurstCompile]
 class ProjectileAuthoring : MonoBehaviour
@@ -18,7 +18,7 @@ class ProjectileBaker : Baker<ProjectileAuthoring>
 {
 
     /// <summary>
-    /// Attachement des composants du block
+    /// Attachement des composants du projectile
     /// </summary>
     public override void Bake(ProjectileAuthoring authoring)
     {

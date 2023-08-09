@@ -74,7 +74,7 @@ public partial class InputsSystem : SystemBase
     }
 
     /// <summary>
-    /// Active le composant d'événement de click de la souris
+    /// Active le composant d'événement de clique de la souris
     /// Appellé par l'action Player.Select
     /// </summary>
     /// <param name="obj"></param>
@@ -87,6 +87,7 @@ public partial class InputsSystem : SystemBase
 
     /// <summary>
     /// Met à jour l'emplacement d'inventaire sélectionné
+    /// Appellé par l'action Player.SelectSlot
     /// </summary>
     /// <param name="obj"></param>
     private void OnSelectSlot(InputAction.CallbackContext obj)

@@ -5,6 +5,9 @@ using Unity.Physics.Systems;
 using UnityEngine;
 using Unity.Collections;
 
+/// <summary>
+/// Système de détection des collisions des projectiles
+/// </summary>
 [BurstCompile]
 [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
 [UpdateAfter(typeof(PhysicsSystemGroup))]
@@ -35,6 +38,11 @@ public partial struct HandleProjectileCollisionSystem : ISystem
 
     }
 
+    /// <summary>
+    /// Créer un EntityCommandBuffer à partir du state
+    /// </summary>
+    /// <param name="state"></param>
+    /// <returns></returns>
     [BurstCompile]
     private EntityCommandBuffer GetEntityCommandBuffer(ref SystemState state)
     {
@@ -44,7 +52,7 @@ public partial struct HandleProjectileCollisionSystem : ISystem
     }
 
     /// <summary>
-    /// 
+    /// Tâche de gestion des collisions de projectiles
     /// </summary>
     [BurstCompile]
     public partial struct ProjectileTriggerEventsJob : ITriggerEventsJob

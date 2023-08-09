@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Singleton permettant d'accéder au sprite du joueur à l'intérieur d'un système
+/// Singleton permettant d'accéder au sprite du joueur depuis un système
 /// </summary>
 public class PlayerAnimationSingleton : MonoBehaviour
 {

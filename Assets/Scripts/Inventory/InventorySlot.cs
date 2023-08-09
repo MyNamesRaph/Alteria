@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Emplacement d'inventaire
+/// Un emplacement d'inventaire
 /// </summary>
 public class InventorySlot : MonoBehaviour
 {

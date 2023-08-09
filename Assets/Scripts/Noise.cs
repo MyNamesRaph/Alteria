@@ -1,4 +1,7 @@
 using System;
+/// <summary>
+/// Singleton permettant d'accéder a une instance de FastNoiseLite depuis un système
+/// </summary>
 public class Noise
 {
     private static readonly Lazy<Noise> lazy = new Lazy<Noise>(() => new Noise());
